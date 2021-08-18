@@ -1,0 +1,277 @@
+*, body{
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden; */
+}
+header{
+    background: #3c8dbc;
+}
+.menu-icons i{
+    color: white;
+    font-size: 15px;
+}
+.rest-icons{
+    display: flex;
+}
+.rest-icons div{
+    height: 50px;
+    display: flex;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu-bars{
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+}
+header .active{
+    background-color: #367fa9;
+}
+.rest-icons div:hover{
+    background-color: #367fa9;
+}
+.menu-bars:hover{
+    background-color: #367fa9;
+}
+.badge{
+    height: 12px !important;
+    width: 12px !important;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+.fix-hover:hover{
+    background-color: unset !important;
+}
+
+@media only screen and (max-width: 767px) {
+    header .container-fluid{
+        display: block !important;
+    }
+     .adminlte{
+         width: 100% !important;
+    } 
+    .menu-icons i, .name span{
+        font-size: 16px;
+        /* padding: 0px 10px; */
+  }
+  .name span{
+      display: none;
+  }
+  .rest-icons div{
+    padding: 0px 15px;
+  }
+  .menu-bars{
+      padding: 0px 15px;
+  }
+  .section1{
+      overflow: hidden;
+      width: 0px !important;
+      position: absolute;
+      z-index: 8;
+  }
+  .section1 div{
+      opacity: 0;
+  }
+  .section2{
+      width: 100% !important;
+      overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+    header .container-fluid{
+        display: block !important;
+    }
+     .adminlte{
+         width: 100% !important;
+    } 
+    .menu-icons i, .name span{
+        font-size: 13px;
+        /* padding: 0px 10px; */
+  }
+  .rest-icons div{
+    padding: 0px 14px;
+  }
+  .menu-bars{
+      padding: 0px 14px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+    .breadcrumb-color{
+        background-color: #d2d6de !important;
+    }
+}
+
+.user-panel{
+    width: 100%;
+}
+.section1 .activee{
+    border-left: 3px solid #3c8dbc;
+    background-color: #1e282c;
+    /* overflow:hidden ; */
+    width: 100%;
+}
+.section1 .activee i, .section1 .activee span{
+    color: white !important;
+}
+.section1 .active2, .section1 .active2 i{
+    color: white !important;
+    font-weight: bolder;
+}
+.section1{
+    transition: all .5s linear;
+}
+.section2{
+    width:calc(100% - 230px);
+    z-index: 1;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+.for-f-size p{
+    font-size: 13px;
+}
+.card-right i{
+    transition: all .2s linear;
+}
+.main-card :hover .card-right i{
+    transition: all .2s linear;
+    padding: 5px 16px 0px 0px;
+}
+.for-tran:hover{
+    background-color: #1e282c !important;
+}
+.for-tran:hover span{
+    color: white !important;
+}
+.for-tran a{
+    text-decoration: none;
+}
+.for-tran span, .for-tran i, .for-tran div{
+    color: #b8c7ce !important;
+    font-weight: 400 !important;
+}
+.dropdowns a div:hover{
+    color: white !important;
+}
+.dropdowns a div:hover i{
+    color: white !important;
+}
+
+/* header logo when toggle */
+    .change-width{
+        width: 50px !important;
+    }
+/* header logo when toggle */
+
+/* side bar toogle */
+.sidebar-toggle{
+    width: 50px !important;
+    transition: all .5s linear;
+}
+.sidebar-toggle .user-name, .sidebar-toggle form, .sidebar-toggle .main-navigation, .sidebar-toggle .dropdowns, .sidebar-toggle .labels-tab{
+    display: none !important;
+}
+.sidebar-toggle .for-tran span, .sidebar-toggle .for-tran .labels{
+    display: none !important;
+} 
+.sidebar-toggle .for-tran{
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    position: relative;
+}
+.sidebar-toggle .user-panel img{
+    height: 35px !important;
+    width: 35px !important;
+}
+.sidebar-toggle .user-panel div{
+    margin: 4px !important;
+}
+.sidebar-toggle .for-tran a{
+    width: 100%;
+}
+.sidebar-toggle .for-tran:hover span{
+    display: block !important;
+    overflow: visible !important;
+    z-index: 2;
+    padding-left: 30px;
+}
+.sidebar-toggle .for-tran:hover{
+    width: 230px !important;
+    overflow: visible !important;
+    z-index: 4;
+}
+.sidebar-toggle .for-tran:hover .dropdowns{
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    right: 0px;
+}
+.sidebar-toggle .active:hover .dropdowns{
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 47px;
+    right: 0px;
+}
+/* side bar toggle css ends */
+
+/* hiding the sidebar for mobile devices */
+.hide-sidebar{
+    /* transition: all 1s linear !important;
+    transform-origin: left;
+    left: -220px; */
+    width: 220px !important;
+    /* overflow: visible; */
+}
+.hide-sidebar div{
+    animation: animate .5s linear forwards;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.dropd-arw-rotate{
+    transform: rotate(-90deg);
+    transition: all .3s linear;
+}
+.labels i{
+    transition: all .3s linear;
+}
+@media only screen and (max-width: 380px){
+    .show-profile{
+        width: 210px !important;
+        right: -30px !important;
+        font-size: 13px !important;
+        min-height: 100px;
+    }
+    .profile-image{
+        height: 80px !important;
+    }
+    .profile-image img{
+        height: 60px !important;
+        width: 60px !important;
+    }
+}
